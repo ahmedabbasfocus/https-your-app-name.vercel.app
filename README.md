@@ -1,5 +1,5 @@
 # https-your-app-name.vercel.app
-https://your-app-name.vercel.app
+
 import { useState, useEffect } from "react"; import { Card, CardContent } from "@/components/ui/card"; import { Button } from "@/components/ui/button"; import { initializeApp } from "firebase/app"; import { getFirestore, collection, addDoc, onSnapshot, updateDoc, doc } from "firebase/firestore"; import { getAuth, RecaptchaVerifier, signInWithPhoneNumber, signOut } from "firebase/auth"; import { Bar } from "react-chartjs-2";
 const firebaseConfig = { apiKey: "YOUR_KEY", authDomain: "YOUR_DOMAIN", projectId: "YOUR_PROJECT_ID", };
 const app = initializeApp(firebaseConfig); const db = getFirestore(app); const auth = getAuth(app);
